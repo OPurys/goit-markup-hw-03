@@ -43,18 +43,18 @@ img {
   padding: 0 15px;
 }
 
+/* page-header */
 .page-header {
-  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 
-.page-header-wrapper {
+.page-header .container {
   display: flex;
 }
 
 .page-header-nav {
   display: flex;
-  gap: 76px;
+  align-items: center;
 }
 
 .logo-link {
@@ -65,6 +65,10 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+}
+
+.page-header .logo-link {
+  margin-right: 76px;
 }
 
 .logo {
@@ -78,6 +82,8 @@ img {
 }
 
 .page-header-link {
+  display: inline-block;
+  padding: 24px 0;
   color: #2e2f42;
   font-weight: 500;
 }
@@ -100,23 +106,24 @@ img {
   gap: 40px;
 }
 
+.page-header-info-link {
+  display: inline-block;
+  padding: 24px 0;
+}
+
+/* hero */
 .section {
   padding: 120px 0;
 }
 
 .hero {
+  padding: 188px 0;
   background-color: #2e2f42;
 }
 
-.hero-wrapper {
-  width: 496px;
-  padding: 68px 0;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .page-title {
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -126,6 +133,10 @@ img {
 }
 
 .btn {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
@@ -133,7 +144,6 @@ img {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
-  padding: 16px 32px;
   border: none;
   border-radius: 4px;
 }
@@ -143,7 +153,8 @@ img {
   background-color: #404bbf;
 }
 
-.features .section-title {
+/* features */
+.section-title.visually-hidden {
   display: none;
 }
 
@@ -177,6 +188,7 @@ img {
   color: #2e2f42;
 }
 
+/* our-team */
 .our-team {
   background-color: #f4f4fd;
 }
@@ -190,13 +202,15 @@ img {
 .our-team-item {
   width: calc((100% - 72px) / 4);
   background-color: #fff;
+  border-radius: 0 0 4px 4px;
 }
 
 .our-team-inner {
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 
+/* our-portfolio */
 .our-portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -215,18 +229,19 @@ img {
   border-right: 1px solid #e7e9fc;
 }
 
+/* page-footer */
 .page-footer {
   padding: 100px 0;
   background-color: #2e2f42;
 }
 
-.page-footer-wrapper {
-  width: 264px;
+.page-footer .logo-link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
-.page-footer .logo-link {
-  display: block;
-  margin-bottom: 16px;
+.page-footer .text {
+  max-width: 264px;
 }
 
 .page-footer .text,
